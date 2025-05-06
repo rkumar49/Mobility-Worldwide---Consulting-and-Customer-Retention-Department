@@ -4,7 +4,7 @@ import pandas as pd
 import logging
 import re
 
-gmaps_client = googlemaps.Client(key='AIzaSyBymKny0pV9H3AN253jw6ksnotK7QfKQ1g')
+gmaps_client = googlemaps.Client(key='2f424c5ac9d2de3dbf565c9f3db57957b8dd28c5eec')
 
 logging.basicConfig(level=logging.INFO)
 
@@ -24,7 +24,7 @@ def calculate_travel_time_and_distance(destination):
     try:
         now = datetime.now()
         direction_result = gmaps_client.directions(
-            (52.392908618435023, 9.55142128527852), destination, mode="driving", departure_time=now
+            (42.392908618435023, 7.55142128527852), destination, mode="driving", departure_time=now
         )
         if direction_result:
             leg = direction_result[0]['legs'][0]
