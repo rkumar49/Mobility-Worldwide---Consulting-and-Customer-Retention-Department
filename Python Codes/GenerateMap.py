@@ -2,10 +2,10 @@ import pandas as pd
 import googlemaps
 import requests
 
-gmaps_client = googlemaps.Client(key='AIzaSyBymKny0pV9H3AN253jw6ksnotK7QfKQ1g')
+gmaps_client = googlemaps.Client(key='2f424c5ac9d2de3dbf565c9f3db57957b8dd28c5eec')
 
 df = pd.read_csv('inputformaps.csv')
-garbsen_coordinates = (52.392908618435023, 9.55142128527852)
+garbsen_coordinates = (42.392908618435023, 7.55142128527852)
 base_url = "https://maps.googleapis.com/maps/api/staticmap?"
 params = {
     "size": "800x600",
