@@ -3,7 +3,7 @@ from datetime import datetime
 import pandas as pd
 import logging
 
-gmaps_client = googlemaps.Client(key='AIzaSyBymKny0pV9H3AN253jw6ksnotK7QfKQ1g')
+gmaps_client = googlemaps.Client(key='2f424c5ac9d2de3dbf565c9f3db57957b8dd28c5eec')
 
 logging.basicConfig(level=logging.INFO)
 
